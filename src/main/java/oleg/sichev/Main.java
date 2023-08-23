@@ -8,6 +8,8 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Scanner;
 
+import static oleg.sichev.Server.*;
+
 public class Main {
 
     static Scanner scanner = new Scanner(System.in);
@@ -19,7 +21,7 @@ public class Main {
         System.out.println("Привет! Для запуска сервера нажмите 1, для выхода из приложения любую другую кнопку");
         int input = scanner.nextInt();
         if (input == 1) {
-            Server.startServer(validPaths);
+            startServer(validPaths);
         } else {
             System.exit(0);
         }
